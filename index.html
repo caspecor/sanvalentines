@@ -4,26 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Quieres ser mi San Valentín? 💕</title>
+    <title>Generador de Propuesta de San Valentín 💕</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="generator.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="content">
-            <h1 class="question">
-                Claudia,<br>
-                ¿quieres ser mi San Valentín? <span class="heart">💕</span>
+        <div class="content generator-content">
+            <h1 class="title">
+                💕 Generador de Propuesta<br>
+                de San Valentín
             </h1>
 
-            <div class="buttons">
-                <button id="yesBtn" class="btn yes-btn">SÍ</button>
-                <button id="noBtn" class="btn no-btn">NO</button>
+            <p class="subtitle">
+                Crea un enlace personalizado para tu pareja
+            </p>
+
+            <div class="generator-form">
+                <label for="nameInput" class="input-label">
+                    ¿Cómo se llama tu pareja?
+                </label>
+                <input type="text" id="nameInput" class="name-input" placeholder="Ej: María, Juan, Alex..."
+                    autocomplete="off" maxlength="50" />
+
+                <button id="generateBtn" class="btn generate-btn">
+                    ✨ Generar Enlace Personalizado
+                </button>
+            </div>
+
+            <div id="resultSection" class="result-section" style="display: none;">
+                <p class="result-label">¡Tu enlace está listo! 🎉</p>
+
+                <div class="link-container">
+                    <input type="text" id="generatedLink" class="generated-link" readonly />
+                    <button id="copyBtn" class="btn copy-btn">
+                        📋 Copiar
+                    </button>
+                </div>
+
+                <p class="instruction-text">
+                    Comparte este enlace con tu pareja para que vea tu propuesta personalizada 💖
+                </p>
+
+                <button id="newLinkBtn" class="btn new-link-btn">
+                    Crear otro enlace
+                </button>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="generator.js"></script>
 </body>
 
 </html>

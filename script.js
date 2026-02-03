@@ -1,3 +1,15 @@
+// Read name from URL parameters
+const urlParams = new URLSearchParams(window.location.search);
+const personName = urlParams.get('name');
+
+// If no name provided, redirect to generator
+if (!personName || personName.trim() === '') {
+    window.location.href = 'index.html';
+} else {
+    // Update the name in the page
+    document.getElementById('personName').textContent = decodeURIComponent(personName);
+}
+
 const yesBtn = document.getElementById('yesBtn');
 const noBtn = document.getElementById('noBtn');
 const buttonsContainer = document.querySelector('.buttons');
