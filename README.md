@@ -1,10 +1,10 @@
-# 💕 Propuesta de San Valentín
+# 💕 Propuesta de San Valentín (sanvalentines)
 
 Una página web interactiva y romántica para hacer una propuesta de San Valentín especial.
 
 ## 🌐 Demo en Vivo
 
-**[Ver la página aquí](https://caspecor.github.io/sanvalentin/)**
+**[Ver la página aquí](https://caspecor.github.io/sanvalentines.github.io/)**
 
 ## ✨ Características
 
